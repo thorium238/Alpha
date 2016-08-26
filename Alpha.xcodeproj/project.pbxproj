@@ -13,6 +13,7 @@
 		E28820651D6FC620003CFC52 /* Alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E28820631D6FC620003CFC52 /* Alpha.xcdatamodeld */; };
 		E28820671D6FC620003CFC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28820661D6FC620003CFC52 /* Assets.xcassets */; };
 		E288206A1D6FC620003CFC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28820681D6FC620003CFC52 /* LaunchScreen.storyboard */; };
+		E28820721D6FCDD6003CFC52 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28820711D6FCDD6003CFC52 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E28820661D6FC620003CFC52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E28820691D6FC620003CFC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E288206B1D6FC620003CFC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28820711D6FCDD6003CFC52 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E288205C1D6FC620003CFC52 /* AppDelegate.swift */,
 				E288205E1D6FC620003CFC52 /* ViewController.swift */,
+				E28820711D6FCDD6003CFC52 /* Task.swift */,
 				E28820601D6FC620003CFC52 /* Main.storyboard */,
 				E28820661D6FC620003CFC52 /* Assets.xcassets */,
 				E28820681D6FC620003CFC52 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28820721D6FCDD6003CFC52 /* Task.swift in Sources */,
 				E288205F1D6FC620003CFC52 /* ViewController.swift in Sources */,
 				E28820651D6FC620003CFC52 /* Alpha.xcdatamodeld in Sources */,
 				E288205D1D6FC620003CFC52 /* AppDelegate.swift in Sources */,
