@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E242EDA31D71175F00427373 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242EDA21D71175F00427373 /* CreateTaskViewController.swift */; };
 		E288205D1D6FC620003CFC52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288205C1D6FC620003CFC52 /* AppDelegate.swift */; };
 		E288205F1D6FC620003CFC52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288205E1D6FC620003CFC52 /* ViewController.swift */; };
 		E28820621D6FC620003CFC52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28820601D6FC620003CFC52 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E242EDA21D71175F00427373 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		E28820591D6FC620003CFC52 /* Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E288205C1D6FC620003CFC52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E288205E1D6FC620003CFC52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				E288205C1D6FC620003CFC52 /* AppDelegate.swift */,
 				E288205E1D6FC620003CFC52 /* ViewController.swift */,
+				E242EDA21D71175F00427373 /* CreateTaskViewController.swift */,
 				E28820711D6FCDD6003CFC52 /* Task.swift */,
 				E28820601D6FC620003CFC52 /* Main.storyboard */,
 				E28820661D6FC620003CFC52 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				E288205F1D6FC620003CFC52 /* ViewController.swift in Sources */,
 				E28820651D6FC620003CFC52 /* Alpha.xcdatamodeld in Sources */,
 				E288205D1D6FC620003CFC52 /* AppDelegate.swift in Sources */,
+				E242EDA31D71175F00427373 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 				E28820701D6FC620003CFC52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
