@@ -10,7 +10,7 @@
         <!--Alpha Do It-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Alpha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TasksViewController" customModule="Alpha" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -42,11 +42,12 @@
                     <connections>
                         <outlet property="tableView" destination="DkP-IU-oTe" id="ghe-Nv-ImI"/>
                         <segue destination="5Cb-Js-SIg" kind="show" identifier="addSegue" id="UNj-A1-XVu"/>
+                        <segue destination="y5a-Vo-x8K" kind="show" identifier="selectTaskSegue" id="1Ec-7u-VBz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.79999999999995" y="36.431784107946029"/>
+            <point key="canvasLocation" x="962" y="51"/>
         </scene>
         <!--Create Task View Controller-->
         <scene sceneID="Nsi-rm-oLP">
@@ -86,15 +87,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yEI-Pf-lFc" firstAttribute="top" secondItem="boB-wf-qlN" secondAttribute="bottom" constant="15" id="77S-mf-o0v"/>
-                            <constraint firstItem="0O3-WR-8CA" firstAttribute="top" secondItem="Pww-BD-Qkf" secondAttribute="bottom" constant="32" id="9CV-xl-dCt"/>
+                            <constraint firstItem="0O3-WR-8CA" firstAttribute="top" secondItem="Pww-BD-Qkf" secondAttribute="bottom" constant="20" id="9CV-xl-dCt"/>
                             <constraint firstItem="Oho-Q1-gqd" firstAttribute="centerX" secondItem="9QN-IV-0E2" secondAttribute="centerX" id="A41-m0-TaU"/>
                             <constraint firstItem="Oho-Q1-gqd" firstAttribute="leading" secondItem="9QN-IV-0E2" secondAttribute="leadingMargin" constant="40" id="Aeu-Ms-ATE"/>
                             <constraint firstItem="0O3-WR-8CA" firstAttribute="centerX" secondItem="9QN-IV-0E2" secondAttribute="centerX" id="Vox-dx-GY9"/>
-                            <constraint firstItem="fQX-pJ-5ve" firstAttribute="top" secondItem="Oho-Q1-gqd" secondAttribute="bottom" constant="57" id="bPY-qO-zeU"/>
+                            <constraint firstItem="fQX-pJ-5ve" firstAttribute="top" secondItem="Oho-Q1-gqd" secondAttribute="bottom" constant="40" id="bPY-qO-zeU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Oho-Q1-gqd" secondAttribute="trailing" constant="40" id="gOv-Sc-ern"/>
                             <constraint firstItem="yEI-Pf-lFc" firstAttribute="centerX" secondItem="9QN-IV-0E2" secondAttribute="centerX" id="iCR-VU-Vlv"/>
                             <constraint firstItem="Pww-BD-Qkf" firstAttribute="centerX" secondItem="9QN-IV-0E2" secondAttribute="centerX" id="jEI-zL-fib"/>
-                            <constraint firstItem="Pww-BD-Qkf" firstAttribute="top" secondItem="fQX-pJ-5ve" secondAttribute="bottom" constant="28" id="nrk-0E-VqF"/>
+                            <constraint firstItem="Pww-BD-Qkf" firstAttribute="top" secondItem="fQX-pJ-5ve" secondAttribute="bottom" constant="20" id="nrk-0E-VqF"/>
                             <constraint firstItem="Oho-Q1-gqd" firstAttribute="top" secondItem="yEI-Pf-lFc" secondAttribute="bottom" constant="19" id="oUU-Mi-A0L" userLabel="Task Name Text Field.top = Name:.bottom + 20"/>
                             <constraint firstItem="fQX-pJ-5ve" firstAttribute="centerX" secondItem="9QN-IV-0E2" secondAttribute="centerX" id="vNs-F2-cQT"/>
                         </constraints>
@@ -106,7 +107,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2A-lD-FtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.4000000000001" y="47.226386806596707"/>
+            <point key="canvasLocation" x="1729" y="51"/>
+        </scene>
+        <!--Complete Task View Controller-->
+        <scene sceneID="lKE-Lm-UU1">
+            <objects>
+                <viewController id="y5a-Vo-x8K" customClass="CompleteTaskViewController" customModule="Alpha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sR7-9g-hX8"/>
+                        <viewControllerLayoutGuide type="bottom" id="1cU-2y-ZSx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HbR-HC-fzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-BK-4WD">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-M0-7w4">
+                                <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="y5a-Vo-x8K" eventType="touchUpInside" id="Mh1-6P-FZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8c7-M0-7w4" firstAttribute="centerX" secondItem="HbR-HC-fzl" secondAttribute="centerX" id="HF0-gP-ATL"/>
+                            <constraint firstItem="Xbv-BK-4WD" firstAttribute="top" secondItem="sR7-9g-hX8" secondAttribute="bottom" constant="30" id="c0e-mj-bwg"/>
+                            <constraint firstItem="8c7-M0-7w4" firstAttribute="top" secondItem="Xbv-BK-4WD" secondAttribute="bottom" constant="50" id="j0T-4H-gp7"/>
+                            <constraint firstItem="Xbv-BK-4WD" firstAttribute="centerX" secondItem="HbR-HC-fzl" secondAttribute="centerX" id="mqz-PL-vEo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="taskLabel" destination="Xbv-BK-4WD" id="k9H-Ze-t8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFi-rc-N3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="792.05397301349331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yRx-gq-gbr">
